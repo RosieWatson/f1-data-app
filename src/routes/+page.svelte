@@ -8,15 +8,19 @@
 </script>
 
 <div class="w-screen px-10 py-6">
-	<h1 class="text-shadow-lg">Formula one</h1>
+	<a href="/">
+		<h1 class="text-shadow-lg">Formula one</h1>
+	</a>
 
-	<Card>
-		<h2 class="mb-2 text-shadow-lg">Driver standings</h2>
+	<Card href="/drivers/championship">
+		<h2 class="mb-2 text-shadow-lg">Top 5 drivers</h2>
 		<table class="w-full border-separate border-spacing-y-2">
 			<tbody>
-				{#each data.driverStandings as driverStanding}
-					<TableRow {driverStanding} maxPoints={data.maxPoints} />
-				{/each}
+				<TableRow driverStanding={data.topDriver} maxPoints={data.maxPoints} />
+				<TableRow driverStanding={data.secondDriver} maxPoints={data.maxPoints} />
+				<TableRow driverStanding={data.thirdDriver} maxPoints={data.maxPoints} />
+				<TableRow driverStanding={data.fourthDriver} maxPoints={data.maxPoints} />
+				<TableRow driverStanding={data.fifthDriver} maxPoints={data.maxPoints} />
 			</tbody>
 		</table>
 	</Card>

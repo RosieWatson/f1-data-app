@@ -5,7 +5,20 @@ export const load: PageLoad = async ({ fetch, params }) => {
 	const response = await res.json();
 
 	const driverStandings = response.MRData.StandingsTable.StandingsLists[0].DriverStandings;
-	const maxPoints = driverStandings.find((ds: { position: string }) => ds.position === '1').points;
+	const topDriver = driverStandings.find((ds: { position: string }) => ds.position === '1');
+	const secondDriver = driverStandings.find((ds: { position: string }) => ds.position === '2');
+	const thirdDriver = driverStandings.find((ds: { position: string }) => ds.position === '3');
+	const fourthDriver = driverStandings.find((ds: { position: string }) => ds.position === '4');
+	const fifthDriver = driverStandings.find((ds: { position: string }) => ds.position === '5');
+	const maxPoints = topDriver.points;
 
-	return { driverStandings, maxPoints };
+	return {
+		driverStandings,
+		maxPoints,
+		topDriver,
+		secondDriver,
+		thirdDriver,
+		fourthDriver,
+		fifthDriver
+	};
 };

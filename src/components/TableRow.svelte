@@ -6,10 +6,7 @@
 <tr>
 	<td>
 		<div class="interactive-table-row flex">
-			<!-- <div class="w-6 self-center rounded-l-md bg-black p-1 text-center text-white">
-				{driverStanding.Driver.permanentNumber}
-			</div> -->
-			<div class="bg-primary w-12 self-center rounded-l-md p-1 text-center text-white">
+			<div class="bg-primary w-14 self-center rounded-l-md p-1 text-center text-white">
 				{driverStanding.Driver.code}
 			</div>
 			<div
