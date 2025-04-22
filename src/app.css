@@ -14,16 +14,29 @@
 
 	--color-white: #e6e6e6;
 	--color-black: #333333;
-
-	--font-serif: ui-serif, Georgia, Cambria, 'Times New Roman', Times, serif;
+	--color-black-reverse: #e7dcde;
 }
 
 html {
-	font-family: var(--font-serif);
 	background-color: var(--color-white);
+	border-color: var(--color-black);
 }
 
 h1 {
 	color: var(--color-primary);
-	font-size: 3rem;
+	font-size: 2.5rem;
+	margin-bottom: 1rem;
+}
+
+h2 {
+	color: var(--color-primary);
+	font-size: 1.75rem;
+}
+
+.interactive-table-row {
+	&:hover {
+		> div {
+			box-shadow: 0 4px 8px -2px gray;
+		}
+	}
 }
