@@ -1,6 +1,6 @@
 <script lang="ts">
-	import Card from '../components/Card.svelte';
-	import TableRow from '../components/TableRow.svelte';
+	import Card from '../lib/components/Card.svelte';
+	import TableRow from '../lib/components/TableRow.svelte';
 
 	import type { PageProps } from './$types';
 

@@ -1,6 +1,6 @@
 import type { PageLoad } from './$types';
 
-export const load: PageLoad = async ({ fetch, params }) => {
+export const load: PageLoad = async ({ fetch }) => {
 	const res = await fetch('https://api.jolpi.ca/ergast/f1/2025/driverstandings/?format=json');
 	const response = await res.json();
 
