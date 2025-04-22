@@ -5,6 +5,7 @@ export const load: PageLoad = async ({ fetch, params }) => {
 	const response = await res.json();
 
 	const driverStandings = response.MRData.StandingsTable.StandingsLists[0].DriverStandings;
-	console.log({ driverStandings });
-	return { driverStandings };
+	const maxPoints = driverStandings.find((ds: { position: string }) => ds.position === '1').points;
+
+	return { driverStandings, maxPoints };
 };

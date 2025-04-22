@@ -1,4 +1,5 @@
 <script lang="ts">
+	import TableRow from '../components/TableRow.svelte';
 	import type { PageProps } from './$types';
 
 	let { data }: PageProps = $props();
@@ -6,7 +7,10 @@
 
 <h1>Formula one</h1>
 
-{#each data.driverStandings as driverStanding}
-	{driverStanding.Driver.code}
-	{driverStanding.points}
-{/each}
+<table class="w-full border-separate border-spacing-y-2">
+	<tbody>
+		{#each data.driverStandings as driverStanding}
+			<TableRow {driverStanding} maxPoints={data.maxPoints} />
+		{/each}
+	</tbody>
+</table>

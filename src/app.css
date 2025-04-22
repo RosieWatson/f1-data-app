@@ -1,1 +1,29 @@
 @import 'tailwindcss';
+
+@theme {
+	--color-primary: #cc3850;
+	--color-primary-pale: #e1939b;
+	--color-primary-paler: #eeb8bd;
+	--color-primary-palest: #fcdcdf;
+
+	--color-secondary: #017b7c;
+	--color-secondary-pale: #8bc8c8;
+
+	--color-tertiary: #dbb805;
+	--color-tertiary-pale: #e9d391;
+
+	--color-white: #e6e6e6;
+	--color-black: #333333;
+
+	--font-serif: ui-serif, Georgia, Cambria, 'Times New Roman', Times, serif;
+}
+
+html {
+	font-family: var(--font-serif);
+	background-color: var(--color-white);
+}
+
+h1 {
+	color: var(--color-primary);
+	font-size: 3rem;
+}
