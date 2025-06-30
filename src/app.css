@@ -56,3 +56,24 @@ hr {
 		}
 	}
 }
+
+.data-row {
+	display: flex;
+
+	div {
+		display: flex;
+		flex-direction: column;
+
+		min-width: 84px;
+		margin-right: 16px;
+
+		h4 {
+			color: var(--color-secondary);
+			font-weight: 500;
+		}
+	}
+
+	svg {
+		width: 100%;
+	}
+}

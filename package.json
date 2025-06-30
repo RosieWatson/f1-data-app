@@ -28,6 +28,7 @@
 		"vite": "^6.2.5"
 	},
 	"dependencies": {
-		"@fontsource-variable/bricolage-grotesque": "^5.2.8"
+		"@fontsource-variable/bricolage-grotesque": "^5.2.8",
+		"svelte-tiny-linked-charts": "^2.2.0"
 	}
 }
