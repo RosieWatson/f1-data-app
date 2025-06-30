@@ -28,6 +28,6 @@
 		"vite": "^6.2.5"
 	},
 	"dependencies": {
-		"@fontsource/arvo": "^5.2.5"
+		"@fontsource-variable/bricolage-grotesque": "^5.2.8"
 	}
 }

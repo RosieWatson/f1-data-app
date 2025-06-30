@@ -1,5 +1,5 @@
 <script lang="ts">
-	import '@fontsource/arvo';
+    import '@fontsource-variable/bricolage-grotesque';
 	import '../app.css';
 
 	let { children } = $props();
@@ -9,6 +9,6 @@
 
 <style>
 	:global(body) {
-		font-family: 'Arvo', sans-serif;
+		font-family: 'Bricolage Grotesque Variable', sans-serif;
 	}
 </style>
