@@ -57,6 +57,11 @@ hr {
 	}
 }
 
+.data-header {
+	display: flex;
+	justify-content: space-between;
+}
+
 .data-row {
 	display: flex;
 

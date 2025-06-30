@@ -1,5 +1,5 @@
 <script lang="ts">
-	import { LinkedChart, LinkedValue } from 'svelte-tiny-linked-charts';
+	import { LinkedChart, LinkedValue, LinkedLabel } from 'svelte-tiny-linked-charts';
 
 	import type { PageProps } from './$types';
 
@@ -23,9 +23,14 @@
 </script>
 
 <div class="w-screen px-10 py-6">
-	<h3><b>Race:</b> Austria</h3>
-	<h3><b>Driver:</b> Lando Norris</h3>
+	<div class="data-header">
+		<div>
+			<h3><b>Race:</b> Austria</h3>
+			<h3><b>Driver:</b> Lando Norris</h3>
+		</div>
 
+		<LinkedLabel linked="link-1" />
+	</div>
 	<hr />
 
 	<div>
